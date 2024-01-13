@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        IMAGE: ["postgres:16", "jboss/keycloak:latest"]
+        IMAGE: ["postgres:16", "jboss/keycloak:latest", "wger/server:latest"]
 
     steps:
       - name: skopeo-copy-action
