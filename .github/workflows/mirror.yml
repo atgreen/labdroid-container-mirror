@@ -23,6 +23,6 @@ jobs:
         uses: coscene-io/skopeo-copy-action@v1.0.0
         with:
           src-image: docker.io/${{ matrix.IMAGE }}
-          src-creds: ${{ DOCKER_USERNAME}}:${{ DOCKER_PASSWORD }}
+          src-creds: ${{ secrets.DOCKER_USERNAME}}:${{ secrets.DOCKER_PASSWORD }}
           dst-image: ghcr.io/${{ github.repository_owner }}/${{ matrix.IMAGE }}
           dst-creds: ${{ github.repository_owner }}:${{ github.token }}
