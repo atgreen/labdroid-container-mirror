@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        IMAGE: [postgres:15]
+        IMAGE: ["postgres:15"]
 
     steps:
       - name: skopeo-copy-action
